@@ -1,2 +1,0 @@
-local scriptContent = game:HttpGet("https://raw.githubusercontent.com/NaavaMiyuki/Pet/refs/heads/main/Hub")
-loadstring(scriptContent)()
